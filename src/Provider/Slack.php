@@ -20,7 +20,7 @@ class Slack extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return $this->domain.'/oauth/authorize';
+        return $this->domain.'/oauth/v2/authorize';
     }
 
     /**
@@ -30,7 +30,7 @@ class Slack extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return $this->domain.'/api/oauth.access';
+        return $this->domain.'/api/oauth.v2.access';
     }
 
     /**
